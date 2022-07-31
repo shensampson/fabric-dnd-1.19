@@ -2,23 +2,33 @@ package net.kai.dndmod.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.kai.dndmod.DnDMod;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
+import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class ModItems {
     public static final Item RAW_MITHRIL = registerItem("raw_mithril",
-            new Item(new FabricItemSettings().group(ModItemGroup.MITHRIL)));
+            new Item((new Item.Settings()).group(ItemGroup.MATERIALS)));
+            //new Item(new FabricItemSettings().group(ModItemGroup.MITHRIL)));
+    //note there are two options for including a mod item in a vanilla item group; here and the code in the mithril item below
 
     public static final Item MITHRIL = registerItem("mithril",
-            new Item(new FabricItemSettings().group(ModItemGroup.MITHRIL)));
+            new Item(new FabricItemSettings().group(ItemGroup.MATERIALS)));
 
-    //new Item(new FabricItemSettings().group(ItemGroup.MATERIALS)));
+            //new Item(new FabricItemSettings().group(ModItemGroup.MITHRIL)));
 
-            //new Item((new Item.Settings()).group(ItemGroup.MATERIALS)));
+    public static final Item MITHRIL_SWORD = registerItem("mithril_sword",
+            new SwordItem(ModToolMaterials.MITHRIL, 4, 1.6f,
+                    new FabricItemSettings().group(ItemGroup.COMBAT)));
 
-    //     RAW_IRON = register("raw_iron",
+    public static final Item IRON_DAGGER = registerItem("iron_dagger",
+            new SwordItem(ToolMaterials.IRON, 2, 1.8f, (new Item.Settings()).group(ItemGroup.COMBAT)));
+
+    public static final Item MITHRIL_HELMET = registerItem("mithril_helmet",
+            new ArmorItem(ModArmorMaterial.MITHRIL, EquipmentSlot.HEAD,
+                    new FabricItemSettings().group(ItemGroup.COMBAT)));
+
 
 
     private static Item registerItem(String name, Item item) {

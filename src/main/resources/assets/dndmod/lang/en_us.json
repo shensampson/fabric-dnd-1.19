@@ -1,6 +1,8 @@
 {
   "item.dndmod.raw_mithril": "Raw Mithril",
-  "item.dndmod.mithril": "Mithril",
-
+  "item.dndmod.mithril": "Mithril Ingot",
+  "item.dndmod.mithril_sword": "Mithril Sword",
+  "item.dndmod.iron_dagger": "Iron Dagger",
+  "item.dndmod.mithril_helmet": "Mithril Helmet",
   "itemGroup.dndmod.mithril": "Mithril Tab"
 }
