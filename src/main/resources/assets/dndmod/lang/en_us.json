@@ -4,5 +4,11 @@
   "item.dndmod.mithril_sword": "Mithril Sword",
   "item.dndmod.iron_dagger": "Iron Dagger",
   "item.dndmod.mithril_helmet": "Mithril Helmet",
+  "item.dndmod.mithril_chestplate": "Mithril Chestplate",
+  "item.dndmod.mithril_leggings": "Mithril Leggings",
+  "item.dndmod.mithril_boots": "Mithril Boots",
+
+  "block.dndmod.mithril_ore": "Mithril Ore",
+
   "itemGroup.dndmod.mithril": "Mithril Tab"
 }

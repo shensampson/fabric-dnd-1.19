@@ -29,8 +29,17 @@ public class ModItems {
             new ArmorItem(ModArmorMaterial.MITHRIL, EquipmentSlot.HEAD,
                     new FabricItemSettings().group(ItemGroup.COMBAT)));
 
+    public static final Item MITHRIL_CHESTPLATE = registerItem("mithril_chestplate",
+            new ArmorItem(ModArmorMaterial.MITHRIL, EquipmentSlot.CHEST,
+                    new FabricItemSettings().group(ItemGroup.COMBAT)));
 
+    public static final Item MITHRIL_LEGGINGS = registerItem("mithril_leggings",
+            new ArmorItem(ModArmorMaterial.MITHRIL, EquipmentSlot.LEGS,
+                    new FabricItemSettings().group(ItemGroup.COMBAT)));
 
+    public static final Item MITHRIL_BOOTS = registerItem("mithril_boots",
+            new ArmorItem(ModArmorMaterial.MITHRIL, EquipmentSlot.FEET,
+                    new FabricItemSettings().group(ItemGroup.COMBAT)));
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(DnDMod.MOD_ID, name), item);
     }

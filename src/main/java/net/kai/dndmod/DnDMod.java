@@ -1,6 +1,7 @@
 package net.kai.dndmod;
 
 import net.fabricmc.api.ModInitializer;
+import net.kai.dndmod.block.ModBlocks;
 import net.kai.dndmod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,7 +12,7 @@ public class DnDMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModBlocks.registerModBlocks();
 		ModItems.registerModItems();
 	}
 }
