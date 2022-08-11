@@ -40,6 +40,11 @@ public class ModItems {
     public static final Item MITHRIL_BOOTS = registerItem("mithril_boots",
             new ArmorItem(ModArmorMaterial.MITHRIL, EquipmentSlot.FEET,
                     new FabricItemSettings().group(ItemGroup.COMBAT)));
+
+    public static final Item SWORD_OF_SLOWNESS = registerItem("sword_of_slowness",
+            new ModSlowingSwordItem(ToolMaterials.IRON, 3, 3f,(new Item.Settings()).group(ItemGroup.COMBAT)));
+
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(DnDMod.MOD_ID, name), item);
     }

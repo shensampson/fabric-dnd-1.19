@@ -7,8 +7,12 @@
   "item.dndmod.mithril_chestplate": "Mithril Chestplate",
   "item.dndmod.mithril_leggings": "Mithril Leggings",
   "item.dndmod.mithril_boots": "Mithril Boots",
+  "item.dndmod.sword_of_slowness": "Sword of Slowness",
 
   "block.dndmod.mithril_ore": "Mithril Ore",
+  "block.dndmod.deepslate_mithril_ore": "Deepslate Mithril Ore",
+
+  "enchantment.mccourse.lightning_striker": "Lightning Striker",
 
   "itemGroup.dndmod.mithril": "Mithril Tab"
 }
